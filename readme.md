@@ -11,6 +11,23 @@
 
 Some other commands you’ll be running often in a Laravel project:
 
-docker run --rm -v $(pwd):/app composer install
+## Create a throwable composer
+`docker run --rm -v $(pwd):/app composer install`
 
-docker-compose up and Enjoy!
+## config .env
+`cp .env.example .env`
+
+## bring up laravel and all services
+`docker-compose up`
+
+## APP key
+`docker-compose exec app php artisan key:generate`
+
+## Set permission
+`sudo chmod -R 777 bootstrap/cache/`
+`sudo chmod -R 777 storage/`
+
+## Check the site
+`localhost:8080` 
+
+## Enjoy!
