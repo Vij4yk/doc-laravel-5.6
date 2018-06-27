@@ -12,5 +12,6 @@
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $counter = Redis::incr("visits");
+    return view('welcome')->withVisits($counter);
 });

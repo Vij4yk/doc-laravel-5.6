@@ -13,6 +13,15 @@ services:
       DB_PORT: 3306
       DB_HOST: database
 
+  redis:
+    image: redis:4.0.10
+    command: ["redis-server", "--appendonly", "yes"]
+    volumes:
+      - redis-data:/data
+      - ./redis.conf:/usr/local/etc/redis/redis.conf
+    ports:
+      - 6379:6379
+
   web:
     build:
       context: ./
@@ -35,3 +44,4 @@ services:
 
 volumes:
   dbdata:
+  redis-data:

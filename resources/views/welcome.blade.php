@@ -79,7 +79,7 @@
 
             <div class="content">
                 <div class="title m-b-md">
-                    Laravel 5.6 Is Dockerized!
+                    Laravel 5.6 Is Dockerized! you are number  {{ $visits }} visitors!
                 </div>
 
                 <div class="links">
