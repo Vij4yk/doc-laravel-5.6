@@ -24,7 +24,9 @@ Some other commands you’ll be running often in a Laravel project:
 `docker-compose exec app php artisan key:generate`
 
 ## Set permission
+
 `sudo chmod -R 777 bootstrap/cache/`
+
 `sudo chmod -R 777 storage/`
 
 ## Check the site
